@@ -3,18 +3,21 @@
 To run the scripts in a Google Colab cell, and view the results, you must include the line "matplotlib inline", for example:
 
 %matplotlib inline
-
-%run script_traditional_segmentation.py
+%run segment_01_Hoescht_pretrained.py
 
 ## Main scripts
 
-### script_traditional_segmentation.py
+### segment_01_Hoescht_pretrained.py
 
-Example to show how traditional image processing works in these images
+Example of the usage of Cellpose to segment nucleus and chromatin using its "nuclei" pretrained model, just changing the diameter parameter.
 
-### segment_Hoescht_FaraEdU.py
+### segment_02_Hoescht_retrained.py
 
-Example of the usage of Cellpose to segment different objects in these images, using their pre-trained models and re-trained models.
+To show the improvement in the segmentation if a pretrained model is trained for a specific task.
+
+### segment_03_Hoescht_FaraEdU.py
+
+Full example of the usage of Cellpose to segment different objects in these images, using their pre-trained models and re-trained models.
 
 ## Materials
 
