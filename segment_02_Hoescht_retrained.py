@@ -4,6 +4,7 @@
 # --- Google Colab ---
 # In one cell, do: !pip install "cellpose<4.0"
 # In another cell do: %matplotlib inline
+# And below, in the same cell: %run segment_02_Hoescht_retrained.py
 
 import os
 

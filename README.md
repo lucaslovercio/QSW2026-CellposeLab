@@ -3,6 +3,7 @@
 To run the scripts in a Google Colab cell, and view the results, you must include the line "matplotlib inline", for example:
 
 %matplotlib inline
+
 %run segment_01_Hoescht_pretrained.py
 
 ## Main scripts

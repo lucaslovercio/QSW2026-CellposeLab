@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# --- Google Colab ---
+# In one cell, do: !pip install "cellpose<4.0"
+# In another cell do: %matplotlib inline
+# And below, in the same cell: %run script_traditional_segmentation.py
+
 ############################################################################
 ###################################   PARAMETERS   #########################
 ############################################################################
