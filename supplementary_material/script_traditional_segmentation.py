@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-from scipy import ndimage as ndi
-from skimage.measure import label
-
 ############################################################################
 ###################################   PARAMETERS   #########################
 ############################################################################
@@ -18,10 +14,15 @@ filename_FaraEdU = 'slice_202.tiff'
 ############################################################################
 ############################################################################
 
+import os
+from scipy import ndimage as ndi
+from skimage.measure import label
 import tifffile as tiff
 import matplotlib.pyplot as plt
 import numpy as np
-
+import sys
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
+sys.path.append(root_path)
 
 def read_tiff_force(path):
     with tiff.TiffFile(path) as tif:
@@ -36,8 +37,8 @@ def read_tiff_force(path):
     return arr.astype(np.uint16)
 
 
-arr16_hoechst = read_tiff_force(os.path.join(folder_root, filename_hoechst))
-arr16_FaraEdU = read_tiff_force(os.path.join(folder_root, filename_FaraEdU))
+arr16_hoechst = read_tiff_force(os.path.join('..',folder_root, filename_hoechst))
+arr16_FaraEdU = read_tiff_force(os.path.join('..',folder_root, filename_FaraEdU))
 
 # ------------------------------------------------------------
 # Input
